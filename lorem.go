@@ -102,8 +102,8 @@ func Sentence(min, max int) string {
 
 	}
 
-	sentence := strings.Join(ws, " ") + "."
-	sentence = strings.ToUpper(sentence[:1]) + sentence[1:]
+	ws[0] = strings.Title(ws[0])
+	sentence := strings.Join(ws, " ") + "."	
 	return sentence
 }
 
